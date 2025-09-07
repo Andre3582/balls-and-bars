@@ -234,7 +234,7 @@ function drawAllBalls() {
 
 function decsendAllThings() {
   // make the speed score dependent
-  speed = 5 + score * 0.02;
+  speed = 5 * (w/300) + score * 0.02;
 
   // clip speed between 2 and 15
   speed = constrain(speed, 2 * (w/300), 15 * (w/300));
