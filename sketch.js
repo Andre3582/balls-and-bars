@@ -551,6 +551,6 @@ function draw() {
       // }
     }
   }
-  drawFrameRate()
+  drawFrameRateAndVersion()
 }
   
