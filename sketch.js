@@ -308,7 +308,6 @@ function drawBars() {
     fill(bar.color);
     if (bar.y > bary) {
       fill(transparant_color);
-      noStroke();
     }
     rect(bar.x, bar.y, barw * bar.sf, barh * bar.sf, 5 * (w/300));
     pop();
@@ -511,7 +510,7 @@ function drawFrameRateAndVersion(){
   noStroke()
   textSize(12*(w/300))
   textAlign(RIGHT,TOP)
-  text(fps+"\nv2.3.1", w, 3*(w/300));
+  text(fps+"\nv2.4.0", w, 3*(w/300));
   pop()
 }
 
