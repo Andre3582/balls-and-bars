@@ -72,7 +72,7 @@ function triangleDOWN(x, y, s) {
 }
 
 // set screen setting
-let w = 550;
+let w = 700;
 let h = w*2;
 let barw = w * 0.45;
 let barh = barw * 0.333;
@@ -115,9 +115,9 @@ function addBall() {
   let weights_100 = [75,15, 0,0]
   
   // select ball type
-  if (score > 150) {
+  if (score > 250) {
     new_ball = weightedRandom(ball_types, weights_150)
-  } else if (score> 100){
+  } else if (score> 150){
     new_ball = weightedRandom(ball_types, weights_100)
   }
 
@@ -237,7 +237,7 @@ function decsendAllThings() {
   speed = 5 * (w/300) + score * 0.02;
 
   // clip speed between 2 and 15
-  speed = constrain(speed, 2 * (w/300), 15 * (w/300));
+  speed = constrain(speed, 2 * (w/300), 20 * (w/300));
 
   for (let b of balls) {
     b.y += speed;
@@ -511,7 +511,7 @@ function drawFrameRateAndVersion(){
   noStroke()
   textSize(12*(w/300))
   textAlign(RIGHT,TOP)
-  text(fps+"\nv2.2.3", w, 3*(w/300));
+  text(fps+"\nv2.3.0", w, 3*(w/300));
   pop()
 }
 
