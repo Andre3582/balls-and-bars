@@ -72,7 +72,7 @@ function triangleDOWN(x, y, s) {
 }
 
 // set screen setting
-let w = 100;
+let w = 750;
 let h = w*2;
 let barw = w * 0.45;
 let barh = barw * 0.333;
@@ -384,7 +384,7 @@ function replaceBar() {
 }
 
 // scoring points
-let score = -10;
+let score = 0;
 let high_score = 0;
 let catchscore, slipscore;
 function drawScore() {
