@@ -503,6 +503,18 @@ function setup() {
   print (arr)
   */
 }
+
+function drawFrameRate(){
+  let fps = Math.round(frameRate());
+  push()
+  fill(fgcol)
+  noStroke()
+  textSize(12*(w/300))
+  textAlign(RIGHT,TOP)
+  text(fps, w, 3*(w/300));
+  pop()
+}
+
 function draw() {
   frameRate(60);
 
@@ -539,5 +551,6 @@ function draw() {
       // }
     }
   }
+  drawFrameRate()
 }
   
