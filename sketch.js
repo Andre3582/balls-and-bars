@@ -504,14 +504,14 @@ function setup() {
   */
 }
 
-function drawFrameRate(){
+function drawFrameRateAndVersion(){
   let fps = Math.round(frameRate());
   push()
   fill(fgcol)
   noStroke()
   textSize(12*(w/300))
   textAlign(RIGHT,TOP)
-  text(fps, w, 3*(w/300));
+  text(fps+"\nv2.2.3", w, 3*(w/300));
   pop()
 }
 
