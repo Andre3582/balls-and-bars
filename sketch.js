@@ -72,7 +72,7 @@ function triangleDOWN(x, y, s) {
 }
 
 // set screen setting
-let w = 750;
+let w = 100;
 let h = w*2;
 let barw = w * 0.45;
 let barh = barw * 0.333;
