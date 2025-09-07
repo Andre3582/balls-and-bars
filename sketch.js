@@ -384,7 +384,7 @@ function replaceBar() {
 }
 
 // scoring points
-let score = 0;
+let score = -10;
 let high_score = 0;
 let catchscore, slipscore;
 function drawScore() {
