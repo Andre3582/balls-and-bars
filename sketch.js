@@ -72,7 +72,7 @@ function triangleDOWN(x, y, s) {
 }
 
 // set screen setting
-let w = 700;
+let w = 600;
 let h = w*2;
 let barw = w * 0.45;
 let barh = barw * 0.333;
@@ -511,7 +511,7 @@ function drawFrameRateAndVersion(){
   noStroke()
   textSize(12*(w/300))
   textAlign(RIGHT,TOP)
-  text(fps+"\nv2.3.0", w, 3*(w/300));
+  text(fps+"\nv2.3.1", w, 3*(w/300));
   pop()
 }
 
