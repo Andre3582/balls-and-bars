@@ -510,7 +510,7 @@ function drawFrameRateAndVersion(){
   noStroke()
   textSize(12*(w/300))
   textAlign(RIGHT,TOP)
-  text(fps+"\nv2.4.0", w, 3*(w/300));
+  text(fps+"\nv2.4.1", w, 3*(w/300));
   pop()
 }
 
